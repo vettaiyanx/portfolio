@@ -230,12 +230,16 @@ if(contactForm) {
       };
 
       try {
-          // Replace with deployed URL later
-          const response = await fetch('http://localhost:5000/api/contact', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(formData)
-          });
+        // Dynamically use the deployed Render URL or fallback to localhost
+        const backendUrl = window.location.hostname === 'localhost' 
+            ? 'http://localhost:5000' 
+            : 'https://portfolio-backend-x8z7.onrender.com'; // Replace this with your actual Render URL later
+
+        const response = await fetch(`${backendUrl}/api/contact`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
 
           const result = await response.json();
 
