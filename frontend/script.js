@@ -233,7 +233,7 @@ if(contactForm) {
         // Dynamically use the deployed Render URL or fallback to localhost
         const backendUrl = window.location.hostname === 'localhost' 
             ? 'http://localhost:5000' 
-            : 'https://portfolio-backend-x8z7.onrender.com'; // Replace this with your actual Render URL later
+            : 'https://portfolio-00jv.onrender.com';
 
         const response = await fetch(`${backendUrl}/api/contact`, {
             method: 'POST',
