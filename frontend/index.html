@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suriya P | Portfolio</title>
+    <meta name="description" content="Suriya P - AI & Data Science Developer Portfolio. Frontend Developer, SAP Expert, ML Engineer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cursor-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-ring"><div></div><div></div><div></div><div></div></div>
+            <p class="loader-text">INITIALIZING PORTFOLIO</p>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Home">
+                <div class="logo-cube">
+                    <div class="cube-face front">S</div>
+                    <div class="cube-face back">P</div>
+                    <div class="cube-face left">✦</div>
+                    <div class="cube-face right">⚡</div>
+                    <div class="cube-face top">◆</div>
+                    <div class="cube-face bottom">★</div>
+                </div>
+                <span class="logo-name">SURIYA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#achievements" data-text="Achievements">Achievements</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-glitch" data-text="SURIYA P">SURIYA P</div>
+            <div class="hero-subtitle">
+                <span class="typed-prefix">I am a </span>
+                <span id="typed-text"></span><span class="typed-cursor">|</span>
+            </div>
+            <p class="hero-tagline">Building intelligent systems at the intersection of AI, Web & SAP</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary"><span>View My Work</span><i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-outline"><span>Get In Touch</span></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number" data-target="300">0</span><span class="stat-plus">+</span><span class="stat-label">Problems Solved</span></div>
+                <div class="stat-item"><span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span><span class="stat-label">Projects Built</span></div>
+                <div class="stat-item"><span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span><span class="stat-label">Certifications</span></div>
+            </div>
+        </div>
+        <div class="hero-decor">
+            <div class="decor-ring"></div>
+            <div class="decor-ring"></div>
+            <div class="decor-ring"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="section-header"><h2 class="section-title" data-text="About Me">About Me</h2><div class="section-line"></div></div>
+        <div class="about-grid">
+            <div class="about-card glass-card">
+                <div class="about-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-initials">SP</div>
+                </div>
+                <h3>Suriya P</h3>
+                <p class="about-role">AI & Data Science Student</p>
+                <p class="about-college"><i class="fas fa-graduation-cap"></i> Chennai Institute of Technology</p>
+                <p class="about-degree">B.Tech - AI & Data Science | CGPA: 8.15/10</p>
+                <p class="about-period">Nov 2023 – Apr 2026</p>
+            </div>
+            <div class="about-text glass-card">
+                <p>Passionate developer specializing in <span class="highlight">Artificial Intelligence</span>, <span class="highlight">Full-Stack Web Development</span>, and <span class="highlight">SAP Enterprise Solutions</span>. I thrive on creating innovative, high-performance applications that solve real-world problems.</p>
+                <p>With hands-on experience in frontend development, machine learning, and SAP BTP, I bring a versatile skill set to every project. I love competitive programming and have solved <span class="highlight">300+ problems</span> across platforms.</p>
+                <div class="about-info-grid">
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Chennai, India</span></div>
+                    <div class="info-item"><i class="fas fa-envelope"></i><span>suriyanja.1105@gmail.com</span></div>
+                    <div class="info-item"><i class="fas fa-phone"></i><span>+91 6385475620</span></div>
+                    <div class="info-item"><i class="fab fa-github"></i><span>github.com/suriya1105</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="section-header"><h2 class="section-title" data-text="Experience">Experience</h2><div class="section-line"></div></div>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="left">
+                <div class="timeline-dot"><i class="fas fa-code"></i></div>
+                <div class="timeline-card glass-card">
+                    <div class="timeline-date">May 2024</div>
+                    <h3>Frontend Development Intern</h3>
+                    <h4>ADDOBYTE Technologies, Chennai</h4>
+                    <ul>
+                        <li>Engineered an interactive Sorting Visualizer using HTML, CSS, and JavaScript with real-time animations for Bubble, Merge, Quick, and Insertion Sort</li>
+                        <li>Optimized UI rendering by refactoring DOM manipulation, reducing animation lag by ~30%</li>
+                        <li>Collaborated with senior developers to improve code readability and maintainability</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="right">
+                <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+                <div class="timeline-card glass-card">
+                    <div class="timeline-date">Dec 2023</div>
+                    <h3>Web Development Intern</h3>
+                    <h4>ADDOBYTE Technologies, Chennai</h4>
+                    <ul>
+                        <li>Developed dynamic, responsive web features using React.js and REST APIs</li>
+                        <li>Integrated third-party APIs and built reusable React components, reducing code duplication by ~25%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="section-header"><h2 class="section-title" data-text="Projects">Projects</h2><div class="section-line"></div></div>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="sap">SAP</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card glass-card" data-category="sap">
+                <div class="project-icon"><i class="fas fa-truck"></i></div>
+                <div class="project-content">
+                    <h3>Courier Tracking System</h3>
+                    <p>Full-stack logistics solution on SAP BTP using RAP Unmanaged with Draft-enablement to prevent data loss. Custom Behavior Pool logic for automated ID generation and shipment validation.</p>
+                    <div class="project-tags"><span>SAP BTP</span><span>RAP</span><span>OData V4</span><span>Fiori Elements</span></div>
+                </div>
+            </div>
+            <div class="project-card glass-card" data-category="sap">
+                <div class="project-icon"><i class="fas fa-clipboard-check"></i></div>
+                <div class="project-content">
+                    <h3>Quality Inspection Tracking</h3>
+                    <p>Digitized end-to-end QA process on SAP BTP with automated Pass/Fail logic, mandatory field validations, and real-time Fiori Elements dashboard.</p>
+                    <div class="project-tags"><span>SAP BTP</span><span>RAP Managed</span><span>CDS Views</span></div>
+                </div>
+            </div>
+            <div class="project-card glass-card" data-category="sap">
+                <div class="project-icon"><i class="fas fa-plane"></i></div>
+                <div class="project-content">
+                    <h3>Airplane Ticket Booking</h3>
+                    <p>High-availability booking engine with Draft tables, real-time seat checks, automated PNR generation, and cascading Behavior Pool logic.</p>
+                    <div class="project-tags"><span>SAP BTP</span><span>RAP Unmanaged</span><span>Draft Tables</span></div>
+                </div>
+            </div>
+            <div class="project-card glass-card" data-category="ai">
+                <div class="project-icon"><i class="fas fa-eye"></i></div>
+                <div class="project-content">
+                    <h3>Object Detection</h3>
+                    <p>Built an object detection model achieving 92% accuracy using YOLO and TensorFlow for real-time image and video processing with CNNs and deep learning.</p>
+                    <div class="project-tags"><span>YOLO</span><span>TensorFlow</span><span>PyTorch</span><span>CNNs</span></div>
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="project-card glass-card" data-category="ai">
+                <div class="project-icon"><i class="fas fa-robot"></i></div>
+                <div class="project-content">
+                    <h3>Health Chatbot</h3>
+                    <p>Enabled real-time symptom assessment using AI and NLP, delivering personalized pain relief recommendations through ML models.</p>
+                    <div class="project-tags"><span>RASA</span><span>NLP</span><span>ML</span><span>Python</span></div>
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="section-header"><h2 class="section-title" data-text="Skills">Skills</h2><div class="section-line"></div></div>
+        <div class="skills-container">
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-server"></i> SAP Technologies</h3>
+                <div class="skill-pills">
+                    <span class="skill-pill">ABAP Cloud</span><span class="skill-pill">RAP</span><span class="skill-pill">CDS Views</span><span class="skill-pill">OData V4</span><span class="skill-pill">SAP BTP</span><span class="skill-pill">Fiori Elements</span><span class="skill-pill">Eclipse ADT</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-pills">
+                    <span class="skill-pill">Python</span><span class="skill-pill">Java</span><span class="skill-pill">JavaScript</span><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span><span class="skill-pill">MySQL</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                <div class="skill-pills">
+                    <span class="skill-pill">React.js</span><span class="skill-pill">TensorFlow</span><span class="skill-pill">RASA</span><span class="skill-pill">NumPy</span><span class="skill-pill">Pandas</span><span class="skill-pill">Streamlit</span><span class="skill-pill">Selenium</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                <div class="skill-pills">
+                    <span class="skill-pill">VS Code</span><span class="skill-pill">Git/GitHub</span><span class="skill-pill">Power BI</span><span class="skill-pill">MS Office</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-brain"></i> Domains</h3>
+                <div class="skill-pills">
+                    <span class="skill-pill">Machine Learning</span><span class="skill-pill">NLP</span><span class="skill-pill">Computer Vision</span><span class="skill-pill">UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+        <div class="section-header"><h2 class="section-title" data-text="Certifications">Certifications</h2><div class="section-line"></div></div>
+        <div class="cert-grid">
+            <div class="cert-card glass-card"><div class="cert-icon"><i class="fas fa-certificate"></i></div><h3>Certified Associate</h3><p>Back-End Developer (ABAP Cloud)</p></div>
+            <div class="cert-card glass-card"><div class="cert-icon"><i class="fab fa-python"></i></div><h3>Cisco</h3><p>Python Essential 1 & 2</p></div>
+            <div class="cert-card glass-card"><div class="cert-icon"><i class="fas fa-network-wired"></i></div><h3>Networking Essentials</h3><p>Cisco Certified</p></div>
+            <div class="cert-card glass-card"><div class="cert-icon"><i class="fas fa-microchip"></i></div><h3>NPTEL</h3><p>Internet of Things (IoT)</p></div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+        <div class="section-header"><h2 class="section-title" data-text="Achievements">Achievements</h2><div class="section-line"></div></div>
+        <div class="achievements-grid">
+            <div class="achievement-card glass-card">
+                <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                <div class="achievement-rank">Top 12.43%</div>
+                <h3>LeetCode</h3>
+                <p>300+ problems solved, Contest Rating 1707</p>
+            </div>
+            <div class="achievement-card glass-card">
+                <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                <div class="achievement-rank">Rank #7302</div>
+                <h3>GeeksforGeeks</h3>
+                <p>300+ problems, Top 23.51% globally</p>
+            </div>
+            <div class="achievement-card glass-card">
+                <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                <div class="achievement-rank">500+ Participants</div>
+                <h3>Event Head</h3>
+                <p>Department Symposium – Led end-to-end logistics & coordination</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="section-header"><h2 class="section-title" data-text="Contact">Get In Touch</h2><div class="section-line"></div></div>
+        <div class="contact-grid">
+            <div class="contact-info glass-card">
+                <h3>Let's Connect</h3>
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:suriyanja.1105@gmail.com" class="contact-link"><i class="fas fa-envelope"></i><span>suriyanja.1105@gmail.com</span></a>
+                    <a href="tel:+916385475620" class="contact-link"><i class="fas fa-phone"></i><span>+91 6385475620</span></a>
+                    <a href="https://linkedin.com/in/suriya-p-800372247" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                    <a href="https://github.com/suriya1105" target="_blank" class="contact-link"><i class="fab fa-github"></i><span>GitHub</span></a>
+                </div>
+            </div>
+            <form class="contact-form glass-card" id="contactForm">
+                <div class="form-group"><input type="text" id="formName" placeholder="Your Name" required><label for="formName">Name</label></div>
+                <div class="form-group"><input type="email" id="formEmail" placeholder="Your Email" required><label for="formEmail">Email</label></div>
+                <div class="form-group"><textarea id="formMessage" placeholder="Your Message" rows="5" required></textarea><label for="formMessage">Message</label></div>
+                <button type="submit" class="btn btn-primary"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Suriya P. Crafted with <i class="fas fa-heart"></i> and code.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
